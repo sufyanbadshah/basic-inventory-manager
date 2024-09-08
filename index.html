@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header Component -->
+        <header-component></header-component>
+
+        <main>
+            <section id="inventory-section">
+                <table id="inventory-table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic rows will be populated here -->
+                    </tbody>
+                </table>
+
+                <div class="form-container">
+                    <input type="text" id="product-name" placeholder="Product Name">
+                    <input type="number" id="product-quantity" placeholder="Quantity">
+                    <input type="number" step="0.01" id="product-price" placeholder="Price">
+                    <button id="add-product">Add Product</button>
+                </div>
+            </section>
+        </main>
+
+        
+    </div>
+  
+<!-- Footer Component -->
+<footer-component></footer-component>
+    <!-- TypeScript -->
+    <script src="./js/index.js" defer></script>
+</body>
+</html>

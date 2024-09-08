@@ -1,0 +1,380 @@
+/* Base Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling with Fade-in Animation */
+/* Header Styling */
+/* Header Styling */
+header {
+    position: relative;
+    background: #000; /* Black background for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden; /* Hide overflow for animation */
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    background: #000; /* Black background for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden; /* Hide overflow for animation */
+}
+
+/* Header Text with Moving Glow */
+/* Header Styling */
+header {
+    position: relative;
+    background: #000; /* Black background for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden; /* Hide overflow for animation */
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    background: #000; /* Black background for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden; /* Hide overflow for animation */
+    border-bottom: 1px solid #333; /* Optional: border for additional styling */
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    background: #000; /* Black background for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden; /* Hide overflow for animation */
+    border-bottom: 1px solid #333; /* Optional: border for additional styling */
+}
+
+/* Glowing Effect */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 100%);
+    animation: glowing 4s linear infinite;
+    z-index: 1;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    background: #000; /* Black background for contrast */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden; /* Hide overflow for animation */
+    border-bottom: 1px solid #333; /* Optional: border for additional styling */
+}
+
+/* Glowing Effect */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    animation: glowing 4s linear infinite;
+    z-index: 1;
+    filter: blur(6px); /* Softens the glow effect */
+    pointer-events: none; /* Ensures it doesn’t interfere with user interactions */
+}
+
+/* Header Text */
+header h1 {
+    position: relative;
+    z-index: 2; /* Ensure text is above the glowing effect */
+    color: #fff; /* White text color */
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold; /* Optional: make text bolder */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Adds a subtle shadow for better visibility */
+}
+
+/* Animation Keyframes */
+@keyframes glowing {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    50% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+
+/* Footer Styling with Slide-in Animation */
+footer {
+    background-color: #000000;
+    color: #8e8e93;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0;
+    animation: slideIn 1.5s ease-out forwards; /* Slide-in animation */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards; /* Fade-in animation */
+}
+
+/* Table Styling with Hover and Row Animations */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6e6e73;
+}
+
+table tbody tr {
+    transition: background-color 0.3s ease; /* Smooth row hover effect */
+}
+
+table tbody tr:hover {
+    background-color: #d6d6d6;
+    animation: hoverUp 0.2s ease-in-out forwards; /* Lift effect on hover */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Button Styling with Hover Effects */
+button {
+    background-color: #1d1d1f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #32CD32;
+    transform: translateY(-3px);
+}
+
+button:after {
+    content: '';
+    background: #ffffff;
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    width: 300%;
+    transition: all 0.4s ease;
+}
+
+button:hover:after {
+    left: -300%;
+}
+
+/* Input Fields Styling */
+input[type="text"], input[type="number"] {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #d1d1d6;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #1d1d1f;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #32CD32;
+    outline: none;
+}
+
+/* Form container styling */
+.form-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input[type="text"], input[type="number"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Animations */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Lift Animation */
+@keyframes hoverUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
+/* Calculator Styling */
+.calculator {
+    margin: 20px auto;
+    max-width: 300px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calculator-screen {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.calculator-screen input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.key {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    background: #242323;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.key:hover {
+    background: #e0e0e0;
+}
+
+.operator {
+    background: #f9a825;
+    color: #fff;
+}
+
+.operator:hover {
+    background: #f57f17;
+}
+
+.equal {
+    grid-column: span 2;
+    background: #4caf50;
+    color: #fff;
+}
+
+.equal:hover {
+    background: #388e3c;
+}
+
+.clear {
+    grid-column: span 2;
+    background: #e53935;
+    color: #fff;
+}
+
+.clear:hover {
+    background: #c62828;
+}
